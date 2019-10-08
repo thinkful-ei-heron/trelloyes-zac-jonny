@@ -7,13 +7,13 @@ function List(props) {
     const header = props.header;
     const cards = props.cards;
     return (
-        <section class="List">
-            <header class="List-header">
+        <section className="List">
+            <header className="List-header">
                 <h2>{header}</h2>
             </header>
-            <div class="List-cards">
+            <div className="List-cards">
                 {cards.map(card => (<Card key={card.id} header={card.title} desc={card.content}/>))}
-                <button type="button" class="List-add-button">
+                <button type="button" className="List-add-button">
                     + Add Random Card
                 </button>
             </div>
